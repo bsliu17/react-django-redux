@@ -7,4 +7,4 @@
 
 ## Apps
 * models are set here
-* 
+* Serializer converts data model to JSON/whatever format

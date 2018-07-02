@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # 3rd party framework
     'rest_framework',
+    'corsheaders',
 
     # Our Apps
     'todos',
@@ -52,6 +53,11 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    # Our additional middlewares
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+
+    # default django DRF middlewares
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -60,6 +66,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000/'
+)
 
 ROOT_URLCONF = 'todo_api.urls'
 
