@@ -1,3 +1,4 @@
 {
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "python.pythonPath": "/home/bryan/.local/share/virtualenvs/react_django_app-v-_chv0P/bin/python"
 }
