@@ -16,6 +16,8 @@ sqlparse = "==0.2.4"
 Django = "==2.0.4"
 Pillow = "==5.1.0"
 Werkzeug = "==0.14.1"
+djangorestframework = "*"
+markdown = "*"
 
 [dev-packages]
 
