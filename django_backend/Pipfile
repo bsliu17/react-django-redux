@@ -17,7 +17,8 @@ Django = "==2.0.4"
 Pillow = "==5.1.0"
 Werkzeug = "==0.14.1"
 djangorestframework = "*"
-markdown = "*"
+Markdown = "*"
+"psycopg2" = "*"
 
 [dev-packages]
 
